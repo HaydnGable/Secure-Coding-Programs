@@ -1,0 +1,7 @@
+Symmetric:
+This app demonstrates symmetric encryption with a basic "caeser-cipher" like function in which the letters of the word are first turned into their Unicode integer form, then the key, in this four, is added to each of those letters to make a new, seemingly random, word. Then, the random word is turned back into Unicode, the key is subtracted to return each integer to its original value, then each value is turned back into a letter to reform the unencrypted word.
+
+Asymmetric:
+This app demonstrates asymmetric encryption with RSA functionality in which two prime numbers, p and q, are chosen, n and z are calculated, then a number that is less than n and is a coprime of z, e, is chosen. Then, d is calculated and the private and public keys can be used. Similarly to the symmetric encryption app, the letters of the word are turned to Unicode before an operation is done on them to encrypt them, then the opposite happens to decrypt them back into the original word. 
+
+I used the code from the ChatGPT asymmetric encryption program as a reference, but did not simply copy/paste anything. I wrote my own code, making sure it was different from the ChatGPT program, though they do similar things. I also chose to use different numbers than the ChatGPT program for p, q, and e. After running tests, I found that the program works to encrypt a word and decrypt it back again, though it only worked for me when the word was in all capital letters.
